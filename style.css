@@ -1,6 +1,7 @@
 /* CSS NATIVE HTML */
 html, body {
 	height:100%;
+	margin:0;
 	font-family: Arial, sans-serif;
 }
 header {
@@ -8,7 +9,8 @@ header {
 }
 
 img {
-	width:200px;
+	padding:50px;
+	width:300px;
 }
 
 /* CSS ID */
@@ -16,6 +18,8 @@ img {
 #header {
 	display:flex;
 	justify-content: flex-end;
+	margin-right:20px;
+
 }
 #header a {
 	padding:10px;
@@ -33,6 +37,7 @@ img {
 #conteneur {
 	height:80%;
 	display:flex;
+	line-height: 5em;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -59,10 +64,24 @@ img {
 	justify-content: space-between;
 	border-top:1px solid silver;
 	margin-top:15px;
-	margin-left:15px;	
+	margin-left:15px;
 }
-#menu div {
+#menu ul li{
 	padding-right: 15px;
+	text-decoration: none;
+	list-style: none;
+}
+#header #connection {
+	background-color:#4285F4;
+	color:white;
+	font-weight:bold;
+}
+a {
+	text-decoration: none;
+}
+#menu ul li:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 #menu #left {
 	display:flex;
@@ -72,15 +91,9 @@ img {
 }
 
 /* CSS CLASS */
-#button {
-	background-color:#4285F4;
-	width:100px;
-	color:white;
-}
 
 .button {
-
-	color:silver;
+	color:#1a0000;
 }
 
 .button:hover {
@@ -89,9 +102,4 @@ img {
 
 .searchbar {
 	width:400px;
-}
-
-.element:hover {
-	text-decoration: underline;
-	cursor: pointer;
 }
