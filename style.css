@@ -10,6 +10,7 @@ header {
 img {
 	width:200px;
 }
+
 /* CSS ID */
 
 #header {
@@ -20,6 +21,10 @@ img {
 	padding:10px;
 	text-decoration:none;
 	color:black;
+}
+#header a:hover {
+	text-decoration: underline;
+	cursor: pointer;
 }
 #header ul li {
 	display: inline-flex;
@@ -46,6 +51,7 @@ img {
 
 #france {
 	margin-left:15px;
+	margin-top: 5px
 }
 
 #menu {
@@ -66,10 +72,19 @@ img {
 }
 
 /* CSS CLASS */
-.button {
+#button {
 	background-color:#4285F4;
 	width:100px;
 	color:white;
+}
+
+.button {
+
+	color:silver;
+}
+
+.button:hover {
+	color: black;
 }
 
 .searchbar {
@@ -78,4 +93,5 @@ img {
 
 .element:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
