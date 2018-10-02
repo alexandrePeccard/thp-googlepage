@@ -75,3 +75,7 @@ img {
 .searchbar {
 	width:400px;
 }
+
+.element:hover {
+	text-decoration: underline;
+}
